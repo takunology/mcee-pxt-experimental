@@ -105,13 +105,28 @@ enum ExperimentalColor {
     Black = 7
 }
 
+enum ExperimentalAddonItem {
+    //% block="ルビー"
+    //% jres=ExperimentalAddonItemIcon.ruby
+    Ruby = 0,
+    //% block="まほうのカギ"
+    //% jres=ExperimentalAddonItemIcon.key
+    MagicKey = 1,
+    //% block="先生のメダル"
+    //% jres=ExperimentalAddonItemIcon.medal
+    TeacherMedal = 2,
+    //% block="ワープの羽"
+    //% jres=ExperimentalAddonItemIcon.feather
+    WarpFeather = 3
+}
+
 type ExperimentalHandler = () => void;
 
 /**
  * Experimental MakeCode blocks for Minecraft Education.
  */
 //% weight=100 color="#2a7f62" icon="\uf1b2"
-//% groups='["イベント", "トリガー", "変数", "計算", "条件", "配列", "メニュー", "UI入力", "リスト", "グリッド", "チェック", "カラー", "拡張"]'
+//% groups='["イベント", "トリガー", "変数", "計算", "条件", "配列", "メニュー", "UI入力", "リスト", "グリッド", "チェック", "カラー", "Minecraft", "拡張"]'
 namespace mceeExperimental {
     let triggerIds: number[] = [];
     let triggerHandlers: ExperimentalHandler[] = [];
@@ -125,6 +140,8 @@ namespace mceeExperimental {
     let lastPattern = "000000000";
     let lastColor = ExperimentalColor.Red;
     let lastMessage = "";
+    let lastItem = Item.Apple;
+    let lastAddonItem = ExperimentalAddonItem.Ruby;
 
     /**
      * 文字列候補をドロップダウンで選びます。
@@ -170,7 +187,8 @@ namespace mceeExperimental {
      */
     //% blockId=mcee_exp_on_start
     //% block="実験をはじめる"
-    //% handlerStatement=1
+    //% topblock=true
+    //% handlerStatement=true
     //% weight=100 group="イベント"
     export function onStart(handler: () => void): void {
         handler();
@@ -184,8 +202,9 @@ namespace mceeExperimental {
     //% blockId=mcee_exp_on_value
     //% block="値イベント $value を受け取ったとき"
     //% value.defl=1
+    //% topblock=true
     //% draggableParameters="reporter"
-    //% handlerStatement=1
+    //% handlerStatement=true
     //% weight=90 group="イベント"
     export function onValue(value: number, handler: (value: number) => void): void {
         handler(value);
@@ -198,7 +217,8 @@ namespace mceeExperimental {
      */
     //% blockId=mcee_exp_on_trigger
     //% block="$trigger のトリガーを受け取ったとき"
-    //% handlerStatement=1
+    //% topblock=true
+    //% handlerStatement=true
     //% weight=100 group="トリガー"
     export function onTrigger(trigger: ExperimentalTrigger, handler: () => void): void {
         triggerIds.push(trigger);
@@ -319,10 +339,25 @@ namespace mceeExperimental {
      */
     //% blockId=mcee_exp_if
     //% block="もし $condition なら"
-    //% handlerStatement=1
+    //% handlerStatement=true
     //% weight=100 group="条件"
     export function ifDo(condition: boolean, handler: () => void): void {
         if (condition) {
+            handler();
+        }
+    }
+
+    /**
+     * 条件が正しくないときだけ中の処理を実行します。
+     * @param condition 条件
+     * @param handler 実行する処理
+     */
+    //% blockId=mcee_exp_else
+    //% block="でなければ $condition"
+    //% handlerStatement=true
+    //% weight=95 group="条件"
+    export function elseDo(condition: boolean, handler: () => void): void {
+        if (!condition) {
             handler();
         }
     }
@@ -572,6 +607,69 @@ namespace mceeExperimental {
     //% weight=90 group="カラー"
     export function color(): ExperimentalColor {
         return lastColor;
+    }
+
+    /**
+     * Minecraft 標準のアイテムピッカーでアイテムを選びます。
+     * @param item 選ぶアイテム
+     */
+    //% blockId=mcee_exp_pick_item
+    //% block="アイテムピッカーで $item を選ぶ"
+    //% item.defl=Item.Apple
+    //% weight=100 group="Minecraft"
+    export function pickItem(item: Item): void {
+        lastItem = item;
+    }
+
+    /**
+     * 最後に選んだアイテムを返します。
+     */
+    //% blockId=mcee_exp_item
+    //% block="選んだアイテム"
+    //% weight=90 group="Minecraft"
+    export function item(): Item {
+        return lastItem;
+    }
+
+    /**
+     * jres アイコン付きの自作アドオンアイテム候補を選びます。
+     * @param item 選ぶ自作アイテム
+     */
+    //% blockId=mcee_exp_pick_addon_item
+    //% block="自作アイテム $item を選ぶ"
+    //% item.defl=ExperimentalAddonItem.Ruby
+    //% item.fieldEditor="imagedropdown"
+    //% item.fieldOptions.columns=4
+    //% weight=80 group="Minecraft"
+    export function pickAddonItem(item: ExperimentalAddonItem): void {
+        lastAddonItem = item;
+    }
+
+    /**
+     * 自作アドオンアイテムの Minecraft ID を返します。
+     * @param item 自作アイテム
+     */
+    //% blockId=mcee_exp_addon_item_id
+    //% block="自作アイテム $item のID"
+    //% item.defl=ExperimentalAddonItem.Ruby
+    //% item.fieldEditor="imagedropdown"
+    //% item.fieldOptions.columns=4
+    //% weight=70 group="Minecraft"
+    export function addonItemId(item: ExperimentalAddonItem): string {
+        if (item == ExperimentalAddonItem.MagicKey) return "mcee:magic_key";
+        if (item == ExperimentalAddonItem.TeacherMedal) return "mcee:teacher_medal";
+        if (item == ExperimentalAddonItem.WarpFeather) return "mcee:warp_feather";
+        return "mcee:ruby";
+    }
+
+    /**
+     * 最後に選んだ自作アドオンアイテムの Minecraft ID を返します。
+     */
+    //% blockId=mcee_exp_selected_addon_item_id
+    //% block="選んだ自作アイテムのID"
+    //% weight=60 group="Minecraft"
+    export function selectedAddonItemId(): string {
+        return addonItemId(lastAddonItem);
     }
 
     /**

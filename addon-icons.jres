@@ -1,0 +1,18 @@
+{
+  "*": {
+    "namespace": "ExperimentalAddonItemIcon",
+    "dataEncoding": "base64"
+  },
+  "ruby": {
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIklEQVR4nGMQERH5TwlmABEb9NTIwqMGjBowagC1DaAEAwByctQw+e8yMQAAAABJRU5ErkJggg=="
+  },
+  "key": {
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIklEQVR4nGMQERH5TwlmABH/btiShUcNGDVg1ABqG0AJBgCQ5qO7iy2gigAAAABJRU5ErkJggg=="
+  },
+  "medal": {
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIklEQVR4nGMQERH5TwlmABGdRjvIwqMGjBowagC1DaAEAwC5QCk7RqFcBQAAAABJRU5ErkJggg=="
+  },
+  "feather": {
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIklEQVR4nGMQERH5TwlmABFz504nC48aMGrAqAHUNoASDAA+LXEzYv3HYQAAAABJRU5ErkJggg=="
+  }
+}
