@@ -106,20 +106,148 @@ enum ExperimentalColor {
 }
 
 enum ExperimentalAddonItem {
-    //% block="ルビー"
-    //% jres=ExperimentalAddonItemIcon.ruby
-    Ruby = 0,
-    //% block="まほうのカギ"
-    //% jres=ExperimentalAddonItemIcon.key
-    MagicKey = 1,
-    //% block="先生のメダル"
-    //% jres=ExperimentalAddonItemIcon.medal
-    TeacherMedal = 2,
-    //% block="ワープの羽"
-    //% jres=ExperimentalAddonItemIcon.feather
-    WarpFeather = 3
+    //% block="木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    WoodenSword = 0,
+    //% block="石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    StoneSword = 1,
+    //% block="鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    IronSword = 2,
+    //% block="金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    GoldenSword = 3,
+    //% block="ダイヤの剣"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    DiamondSword = 4,
+    //% block="ネザライトの剣"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    NetheriteSword = 5
 }
 
+enum ExperimentalScrollItem {
+    //% block="01 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item01 = 1,
+    //% block="02 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item02 = 2,
+    //% block="03 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item03 = 3,
+    //% block="04 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item04 = 4,
+    //% block="05 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item05 = 5,
+    //% block="06 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item06 = 6,
+    //% block="07 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item07 = 7,
+    //% block="08 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item08 = 8,
+    //% block="09 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item09 = 9,
+    //% block="10 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item10 = 10,
+    //% block="11 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item11 = 11,
+    //% block="12 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item12 = 12,
+    //% block="13 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item13 = 13,
+    //% block="14 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item14 = 14,
+    //% block="15 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item15 = 15,
+    //% block="16 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item16 = 16,
+    //% block="17 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item17 = 17,
+    //% block="18 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item18 = 18,
+    //% block="19 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item19 = 19,
+    //% block="20 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item20 = 20,
+    //% block="21 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item21 = 21,
+    //% block="22 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item22 = 22,
+    //% block="23 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item23 = 23,
+    //% block="24 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item24 = 24,
+    //% block="25 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item25 = 25,
+    //% block="26 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item26 = 26,
+    //% block="27 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item27 = 27,
+    //% block="28 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item28 = 28,
+    //% block="29 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item29 = 29,
+    //% block="30 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item30 = 30,
+    //% block="31 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item31 = 31,
+    //% block="32 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item32 = 32,
+    //% block="33 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item33 = 33,
+    //% block="34 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item34 = 34,
+    //% block="35 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item35 = 35,
+    //% block="36 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item36 = 36
+}
+
+enum ExperimentalImageSizeIcon {
+    //% block="16px"
+    //% jres=ExperimentalAddonItemIcon.sword16
+    Sword16 = 16,
+    //% block="32px"
+    //% jres=ExperimentalAddonItemIcon.sword32
+    Sword32 = 32,
+    //% block="64px"
+    //% jres=ExperimentalAddonItemIcon.sword64
+    Sword64 = 64
+}
 type ExperimentalHandler = () => void;
 
 /**
@@ -141,7 +269,9 @@ namespace mceeExperimental {
     let lastColor = ExperimentalColor.Red;
     let lastMessage = "";
     let lastItem = Item.Apple;
-    let lastAddonItem = ExperimentalAddonItem.Ruby;
+    let lastAddonItem = ExperimentalAddonItem.WoodenSword;
+    let lastScrollItem = ExperimentalScrollItem.Item01;
+    let lastImageSizeIcon = ExperimentalImageSizeIcon.Sword32;
 
     /**
      * 文字列候補をドロップダウンで選びます。
@@ -187,8 +317,6 @@ namespace mceeExperimental {
      */
     //% blockId=mcee_exp_on_start
     //% block="実験をはじめる"
-    //% topblock=true
-    //% handlerStatement=true
     //% weight=100 group="イベント"
     export function onStart(handler: () => void): void {
         handler();
@@ -202,9 +330,7 @@ namespace mceeExperimental {
     //% blockId=mcee_exp_on_value
     //% block="値イベント $value を受け取ったとき"
     //% value.defl=1
-    //% topblock=true
     //% draggableParameters="reporter"
-    //% handlerStatement=true
     //% weight=90 group="イベント"
     export function onValue(value: number, handler: (value: number) => void): void {
         handler(value);
@@ -217,8 +343,6 @@ namespace mceeExperimental {
      */
     //% blockId=mcee_exp_on_trigger
     //% block="$trigger のトリガーを受け取ったとき"
-    //% topblock=true
-    //% handlerStatement=true
     //% weight=100 group="トリガー"
     export function onTrigger(trigger: ExperimentalTrigger, handler: () => void): void {
         triggerIds.push(trigger);
@@ -637,9 +761,9 @@ namespace mceeExperimental {
      */
     //% blockId=mcee_exp_pick_addon_item
     //% block="自作アイテム $item を選ぶ"
-    //% item.defl=ExperimentalAddonItem.Ruby
+    //% item.defl=ExperimentalAddonItem.WoodenSword
     //% item.fieldEditor="imagedropdown"
-    //% item.fieldOptions.columns=4
+    //% item.fieldOptions.columns=3
     //% weight=80 group="Minecraft"
     export function pickAddonItem(item: ExperimentalAddonItem): void {
         lastAddonItem = item;
@@ -651,15 +775,17 @@ namespace mceeExperimental {
      */
     //% blockId=mcee_exp_addon_item_id
     //% block="自作アイテム $item のID"
-    //% item.defl=ExperimentalAddonItem.Ruby
+    //% item.defl=ExperimentalAddonItem.WoodenSword
     //% item.fieldEditor="imagedropdown"
-    //% item.fieldOptions.columns=4
+    //% item.fieldOptions.columns=3
     //% weight=70 group="Minecraft"
     export function addonItemId(item: ExperimentalAddonItem): string {
-        if (item == ExperimentalAddonItem.MagicKey) return "mcee:magic_key";
-        if (item == ExperimentalAddonItem.TeacherMedal) return "mcee:teacher_medal";
-        if (item == ExperimentalAddonItem.WarpFeather) return "mcee:warp_feather";
-        return "mcee:ruby";
+        if (item == ExperimentalAddonItem.StoneSword) return "mcee:stone_sword";
+        if (item == ExperimentalAddonItem.IronSword) return "mcee:iron_sword";
+        if (item == ExperimentalAddonItem.GoldenSword) return "mcee:golden_sword";
+        if (item == ExperimentalAddonItem.DiamondSword) return "mcee:diamond_sword";
+        if (item == ExperimentalAddonItem.NetheriteSword) return "mcee:netherite_sword";
+        return "mcee:wooden_sword";
     }
 
     /**
@@ -670,6 +796,56 @@ namespace mceeExperimental {
     //% weight=60 group="Minecraft"
     export function selectedAddonItemId(): string {
         return addonItemId(lastAddonItem);
+    }
+
+    /**
+     * 36個の候補を6列グリッドで並べる自作アイテムピッカーです。
+     * @param item 選ぶ候補
+     */
+    //% blockId=mcee_exp_pick_scroll_item
+    //% block="スクロールアイテムピッカーで $item を選ぶ"
+    //% item.defl=ExperimentalScrollItem.Item01
+    //% item.fieldEditor="imagedropdown"
+    //% item.fieldOptions.columns=6
+    //% item.fieldOptions.width=420
+    //% weight=50 group="Minecraft"
+    export function pickScrollItem(item: ExperimentalScrollItem): void {
+        lastScrollItem = item;
+    }
+
+    /**
+     * スクロールアイテムピッカーで最後に選んだ候補のIDを返します。
+     */
+    //% blockId=mcee_exp_scroll_item_id
+    //% block="スクロールアイテムピッカーのID"
+    //% weight=40 group="Minecraft"
+    export function scrollItemId(): string {
+        return "mcee:scroll_item_" + lastScrollItem;
+    }
+
+    /**
+     * jres 画像サイズの見え方を比べるためのピッカーです。
+     * @param icon 比較する画像サイズ
+     */
+    //% blockId=mcee_exp_compare_image_size
+    //% block="画像サイズ比較 $icon を選ぶ"
+    //% icon.defl=ExperimentalImageSizeIcon.Sword32
+    //% icon.fieldEditor="imagedropdown"
+    //% icon.fieldOptions.columns=3
+    //% icon.fieldOptions.width=280
+    //% weight=30 group="Minecraft"
+    export function compareImageSize(icon: ExperimentalImageSizeIcon): void {
+        lastImageSizeIcon = icon;
+    }
+
+    /**
+     * 画像サイズ比較で最後に選んだ画像の元サイズを返します。
+     */
+    //% blockId=mcee_exp_image_size_value
+    //% block="選んだ画像サイズ"
+    //% weight=20 group="Minecraft"
+    export function imageSizeValue(): number {
+        return lastImageSizeIcon;
     }
 
     /**
