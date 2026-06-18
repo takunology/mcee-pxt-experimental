@@ -916,66 +916,45 @@ namespace mceeExperimental {
         return addonItemId(lastAddonItem);
     }
 
+    /**
+     * 36個の候補を6列グリッドで並べ、4行分だけ表示してスクロールできる自作アイテムピッカーです。
+     * @param item 選ぶ候補
+     */
+    //% blockId=mcee_exp_pick_scroll_item
+    //% block="6列スクロールアイテムピッカーで $item を選ぶ"
+    //% item.defl=ExperimentalScrollItem.Item01
+    //% item.fieldEditor="imagedropdown"
+    //% item.fieldOptions.columns=6
+    //% item.fieldOptions.maxRows="4"
+    //% item.fieldOptions.width=420
+    //% weight=50 group="Minecraft"
     export function pickScrollItem(item: ExperimentalScrollItem): void {
         lastScrollItem = item;
         lastPagedItem = item;
     }
 
-    /**
-     * 12個ずつに分けた6列アイテムピッカーです。
-     * @param item 選ぶ候補
-     */
-    //% blockId=mcee_exp_pick_paged_item_1
-    //% block="6列アイテムピッカー 1-12 で $item を選ぶ"
-    //% item.defl=ExperimentalPagedItem1.Item01
-    //% item.fieldEditor="imagedropdown"
-    //% item.fieldOptions.columns=6
-    //% item.fieldOptions.width=420
-    //% weight=50 group="Minecraft"
     export function pickPagedItem1(item: ExperimentalPagedItem1): void {
         lastPagedItem = item;
     }
 
-    /**
-     * 12個ずつに分けた6列アイテムピッカーです。
-     * @param item 選ぶ候補
-     */
-    //% blockId=mcee_exp_pick_paged_item_2
-    //% block="6列アイテムピッカー 13-24 で $item を選ぶ"
-    //% item.defl=ExperimentalPagedItem2.Item13
-    //% item.fieldEditor="imagedropdown"
-    //% item.fieldOptions.columns=6
-    //% item.fieldOptions.width=420
-    //% weight=49 group="Minecraft"
     export function pickPagedItem2(item: ExperimentalPagedItem2): void {
         lastPagedItem = item;
     }
 
-    /**
-     * 12個ずつに分けた6列アイテムピッカーです。
-     * @param item 選ぶ候補
-     */
-    //% blockId=mcee_exp_pick_paged_item_3
-    //% block="6列アイテムピッカー 25-36 で $item を選ぶ"
-    //% item.defl=ExperimentalPagedItem3.Item25
-    //% item.fieldEditor="imagedropdown"
-    //% item.fieldOptions.columns=6
-    //% item.fieldOptions.width=420
-    //% weight=48 group="Minecraft"
     export function pickPagedItem3(item: ExperimentalPagedItem3): void {
         lastPagedItem = item;
     }
 
-    /**
-     * 6列アイテムピッカーで最後に選んだ候補のIDを返します。
-     */
-    //% blockId=mcee_exp_paged_item_id
-    //% block="6列アイテムピッカーのID"
-    //% weight=40 group="Minecraft"
     export function pagedItemId(): string {
         return "mcee:paged_item_" + lastPagedItem;
     }
 
+    /**
+     * 6列スクロールアイテムピッカーで最後に選んだ候補のIDを返します。
+     */
+    //% blockId=mcee_exp_scroll_item_id
+    //% block="6列スクロールアイテムピッカーのID"
+    //% weight=39 group="Minecraft"
     export function scrollItemId(): string {
         return "mcee:scroll_item_" + lastScrollItem;
     }

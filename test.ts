@@ -20,12 +20,10 @@ mceeExperimental.setPattern5x5("1000101010001000101010001");
 mceeExperimental.pickColor(ExperimentalColor.Red);
 mceeExperimental.pickItem(Item.Apple);
 mceeExperimental.pickAddonItem(ExperimentalAddonItem.WoodenSword);
-mceeExperimental.pickPagedItem1(ExperimentalPagedItem1.Item01);
-mceeExperimental.pickPagedItem2(ExperimentalPagedItem2.Item13);
-mceeExperimental.pickPagedItem3(ExperimentalPagedItem3.Item25);
+mceeExperimental.pickScrollItem(ExperimentalScrollItem.Item01);
 mceeExperimental.compareImageSize(ExperimentalImageSizeIcon.Sword64);
 mceeExperimental.setNumber(ExperimentalSlot.A, mceeExperimental.imageSizeValue());
-mceeExperimental.pickLabelList(mceeExperimental.pagedItemId());
+mceeExperimental.pickLabelList(mceeExperimental.scrollItemId());
 mceeExperimental.ifDo(mceeExperimental.isGreater(5, 2), function () {
     mceeExperimental.pickLabelList("村");
 });
