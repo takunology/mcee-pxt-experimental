@@ -248,6 +248,123 @@ enum ExperimentalImageSizeIcon {
     //% jres=ExperimentalAddonItemIcon.sword64
     Sword64 = 64
 }
+
+enum ExperimentalPagedItem1 {
+    //% block="01 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item01 = 1,
+    //% block="02 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item02 = 2,
+    //% block="03 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item03 = 3,
+    //% block="04 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item04 = 4,
+    //% block="05 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item05 = 5,
+    //% block="06 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item06 = 6,
+    //% block="07 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item07 = 7,
+    //% block="08 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item08 = 8,
+    //% block="09 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item09 = 9,
+    //% block="10 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item10 = 10,
+    //% block="11 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item11 = 11,
+    //% block="12 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item12 = 12
+}
+
+enum ExperimentalPagedItem2 {
+    //% block="13 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item13 = 13,
+    //% block="14 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item14 = 14,
+    //% block="15 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item15 = 15,
+    //% block="16 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item16 = 16,
+    //% block="17 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item17 = 17,
+    //% block="18 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item18 = 18,
+    //% block="19 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item19 = 19,
+    //% block="20 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item20 = 20,
+    //% block="21 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item21 = 21,
+    //% block="22 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item22 = 22,
+    //% block="23 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item23 = 23,
+    //% block="24 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item24 = 24
+}
+
+enum ExperimentalPagedItem3 {
+    //% block="25 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item25 = 25,
+    //% block="26 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item26 = 26,
+    //% block="27 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item27 = 27,
+    //% block="28 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item28 = 28,
+    //% block="29 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item29 = 29,
+    //% block="30 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item30 = 30,
+    //% block="31 木の剣"
+    //% jres=ExperimentalAddonItemIcon.woodenSword
+    Item31 = 31,
+    //% block="32 石の剣"
+    //% jres=ExperimentalAddonItemIcon.stoneSword
+    Item32 = 32,
+    //% block="33 鉄の剣"
+    //% jres=ExperimentalAddonItemIcon.ironSword
+    Item33 = 33,
+    //% block="34 金の剣"
+    //% jres=ExperimentalAddonItemIcon.goldenSword
+    Item34 = 34,
+    //% block="35 ダイヤ"
+    //% jres=ExperimentalAddonItemIcon.diamondSword
+    Item35 = 35,
+    //% block="36 ネザライト"
+    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    Item36 = 36
+}
 type ExperimentalHandler = () => void;
 
 /**
@@ -271,6 +388,7 @@ namespace mceeExperimental {
     let lastItem = Item.Apple;
     let lastAddonItem = ExperimentalAddonItem.WoodenSword;
     let lastScrollItem = ExperimentalScrollItem.Item01;
+    let lastPagedItem = 1;
     let lastImageSizeIcon = ExperimentalImageSizeIcon.Sword32;
 
     /**
@@ -798,27 +916,66 @@ namespace mceeExperimental {
         return addonItemId(lastAddonItem);
     }
 
+    export function pickScrollItem(item: ExperimentalScrollItem): void {
+        lastScrollItem = item;
+        lastPagedItem = item;
+    }
+
     /**
-     * 36個の候補を6列グリッドで並べる自作アイテムピッカーです。
+     * 12個ずつに分けた6列アイテムピッカーです。
      * @param item 選ぶ候補
      */
-    //% blockId=mcee_exp_pick_scroll_item
-    //% block="スクロールアイテムピッカーで $item を選ぶ"
-    //% item.defl=ExperimentalScrollItem.Item01
+    //% blockId=mcee_exp_pick_paged_item_1
+    //% block="6列アイテムピッカー 1-12 で $item を選ぶ"
+    //% item.defl=ExperimentalPagedItem1.Item01
     //% item.fieldEditor="imagedropdown"
     //% item.fieldOptions.columns=6
     //% item.fieldOptions.width=420
     //% weight=50 group="Minecraft"
-    export function pickScrollItem(item: ExperimentalScrollItem): void {
-        lastScrollItem = item;
+    export function pickPagedItem1(item: ExperimentalPagedItem1): void {
+        lastPagedItem = item;
     }
 
     /**
-     * スクロールアイテムピッカーで最後に選んだ候補のIDを返します。
+     * 12個ずつに分けた6列アイテムピッカーです。
+     * @param item 選ぶ候補
      */
-    //% blockId=mcee_exp_scroll_item_id
-    //% block="スクロールアイテムピッカーのID"
+    //% blockId=mcee_exp_pick_paged_item_2
+    //% block="6列アイテムピッカー 13-24 で $item を選ぶ"
+    //% item.defl=ExperimentalPagedItem2.Item13
+    //% item.fieldEditor="imagedropdown"
+    //% item.fieldOptions.columns=6
+    //% item.fieldOptions.width=420
+    //% weight=49 group="Minecraft"
+    export function pickPagedItem2(item: ExperimentalPagedItem2): void {
+        lastPagedItem = item;
+    }
+
+    /**
+     * 12個ずつに分けた6列アイテムピッカーです。
+     * @param item 選ぶ候補
+     */
+    //% blockId=mcee_exp_pick_paged_item_3
+    //% block="6列アイテムピッカー 25-36 で $item を選ぶ"
+    //% item.defl=ExperimentalPagedItem3.Item25
+    //% item.fieldEditor="imagedropdown"
+    //% item.fieldOptions.columns=6
+    //% item.fieldOptions.width=420
+    //% weight=48 group="Minecraft"
+    export function pickPagedItem3(item: ExperimentalPagedItem3): void {
+        lastPagedItem = item;
+    }
+
+    /**
+     * 6列アイテムピッカーで最後に選んだ候補のIDを返します。
+     */
+    //% blockId=mcee_exp_paged_item_id
+    //% block="6列アイテムピッカーのID"
     //% weight=40 group="Minecraft"
+    export function pagedItemId(): string {
+        return "mcee:paged_item_" + lastPagedItem;
+    }
+
     export function scrollItemId(): string {
         return "mcee:scroll_item_" + lastScrollItem;
     }
