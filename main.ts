@@ -106,263 +106,272 @@ enum ExperimentalColor {
 }
 
 enum ExperimentalAddonItem {
-    //% block="木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
-    WoodenSword = 0,
-    //% block="石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
-    StoneSword = 1,
-    //% block="鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
-    IronSword = 2,
-    //% block="金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
-    GoldenSword = 3,
-    //% block="ダイヤの剣"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
-    DiamondSword = 4,
-    //% block="ネザライトの剣"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
-    NetheriteSword = 5
+    //% block="エメラルドロッド"
+    //% jres=ExperimentalAddonItemIcon.emeraldRod
+    EmeraldRod = 0,
+    //% block="サファイアロッド"
+    //% jres=ExperimentalAddonItemIcon.sapphireRod
+    SapphireRod = 1,
+    //% block="森のロッド"
+    //% jres=ExperimentalAddonItemIcon.forestRod
+    ForestRod = 2,
+    //% block="アメジストロッド"
+    //% jres=ExperimentalAddonItemIcon.amethystRod
+    AmethystRod = 3,
+    //% block="ルビーロッド"
+    //% jres=ExperimentalAddonItemIcon.rubyRod
+    RubyRod = 4,
+    //% block="アンバーロッド"
+    //% jres=ExperimentalAddonItemIcon.amberRod
+    AmberRod = 5,
+    //% block="エメラルドセプター"
+    //% jres=ExperimentalAddonItemIcon.emeraldScepter
+    EmeraldScepter = 6,
+    //% block="銀のエメラルドロッド"
+    //% jres=ExperimentalAddonItemIcon.silverEmeraldRod
+    SilverEmeraldRod = 7,
+    //% block="鋼のエメラルドロッド"
+    //% jres=ExperimentalAddonItemIcon.steelEmeraldRod
+    SteelEmeraldRod = 8
 }
 
 enum ExperimentalScrollItem {
-    //% block="01 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="01 エメラルド"
+    //% jres=ExperimentalAddonItemIcon.emeraldRod
     Item01 = 1,
-    //% block="02 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="02 サファイア"
+    //% jres=ExperimentalAddonItemIcon.sapphireRod
     Item02 = 2,
-    //% block="03 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="03 森"
+    //% jres=ExperimentalAddonItemIcon.forestRod
     Item03 = 3,
-    //% block="04 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="04 アメジスト"
+    //% jres=ExperimentalAddonItemIcon.amethystRod
     Item04 = 4,
-    //% block="05 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% block="05 ルビー"
+    //% jres=ExperimentalAddonItemIcon.rubyRod
     Item05 = 5,
-    //% block="06 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% block="06 アンバー"
+    //% jres=ExperimentalAddonItemIcon.amberRod
     Item06 = 6,
-    //% block="07 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="07 セプター"
+    //% jres=ExperimentalAddonItemIcon.emeraldScepter
     Item07 = 7,
-    //% block="08 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="08 銀エメラルド"
+    //% jres=ExperimentalAddonItemIcon.silverEmeraldRod
     Item08 = 8,
-    //% block="09 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="09 鋼エメラルド"
+    //% jres=ExperimentalAddonItemIcon.steelEmeraldRod
     Item09 = 9,
-    //% block="10 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="10 エメラルド"
+    //% jres=ExperimentalAddonItemIcon.emeraldRod
     Item10 = 10,
-    //% block="11 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% block="11 サファイア"
+    //% jres=ExperimentalAddonItemIcon.sapphireRod
     Item11 = 11,
-    //% block="12 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% block="12 森"
+    //% jres=ExperimentalAddonItemIcon.forestRod
     Item12 = 12,
-    //% block="13 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="13 アメジスト"
+    //% jres=ExperimentalAddonItemIcon.amethystRod
     Item13 = 13,
-    //% block="14 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="14 ルビー"
+    //% jres=ExperimentalAddonItemIcon.rubyRod
     Item14 = 14,
-    //% block="15 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="15 アンバー"
+    //% jres=ExperimentalAddonItemIcon.amberRod
     Item15 = 15,
-    //% block="16 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="16 セプター"
+    //% jres=ExperimentalAddonItemIcon.emeraldScepter
     Item16 = 16,
-    //% block="17 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% block="17 銀エメラルド"
+    //% jres=ExperimentalAddonItemIcon.silverEmeraldRod
     Item17 = 17,
-    //% block="18 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% block="18 鋼エメラルド"
+    //% jres=ExperimentalAddonItemIcon.steelEmeraldRod
     Item18 = 18,
-    //% block="19 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="19 エメラルド"
+    //% jres=ExperimentalAddonItemIcon.emeraldRod
     Item19 = 19,
-    //% block="20 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="20 サファイア"
+    //% jres=ExperimentalAddonItemIcon.sapphireRod
     Item20 = 20,
-    //% block="21 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="21 森"
+    //% jres=ExperimentalAddonItemIcon.forestRod
     Item21 = 21,
-    //% block="22 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="22 アメジスト"
+    //% jres=ExperimentalAddonItemIcon.amethystRod
     Item22 = 22,
-    //% block="23 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% block="23 ルビー"
+    //% jres=ExperimentalAddonItemIcon.rubyRod
     Item23 = 23,
-    //% block="24 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% block="24 アンバー"
+    //% jres=ExperimentalAddonItemIcon.amberRod
     Item24 = 24,
-    //% block="25 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="25 セプター"
+    //% jres=ExperimentalAddonItemIcon.emeraldScepter
     Item25 = 25,
-    //% block="26 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="26 銀エメラルド"
+    //% jres=ExperimentalAddonItemIcon.silverEmeraldRod
     Item26 = 26,
-    //% block="27 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="27 鋼エメラルド"
+    //% jres=ExperimentalAddonItemIcon.steelEmeraldRod
     Item27 = 27,
-    //% block="28 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="28 エメラルド"
+    //% jres=ExperimentalAddonItemIcon.emeraldRod
     Item28 = 28,
-    //% block="29 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% block="29 サファイア"
+    //% jres=ExperimentalAddonItemIcon.sapphireRod
     Item29 = 29,
-    //% block="30 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% block="30 森"
+    //% jres=ExperimentalAddonItemIcon.forestRod
     Item30 = 30,
-    //% block="31 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="31 アメジスト"
+    //% jres=ExperimentalAddonItemIcon.amethystRod
     Item31 = 31,
-    //% block="32 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="32 ルビー"
+    //% jres=ExperimentalAddonItemIcon.rubyRod
     Item32 = 32,
-    //% block="33 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="33 アンバー"
+    //% jres=ExperimentalAddonItemIcon.amberRod
     Item33 = 33,
-    //% block="34 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="34 セプター"
+    //% jres=ExperimentalAddonItemIcon.emeraldScepter
     Item34 = 34,
-    //% block="35 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% block="35 銀エメラルド"
+    //% jres=ExperimentalAddonItemIcon.silverEmeraldRod
     Item35 = 35,
-    //% block="36 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% block="36 鋼エメラルド"
+    //% jres=ExperimentalAddonItemIcon.steelEmeraldRod
     Item36 = 36
 }
 
 enum ExperimentalImageSizeIcon {
     //% block="16px"
-    //% jres=ExperimentalAddonItemIcon.sword16
-    Sword16 = 16,
+    //% jres=ExperimentalAddonItemIcon.rod16
+    Rod16 = 16,
     //% block="32px"
-    //% jres=ExperimentalAddonItemIcon.sword32
-    Sword32 = 32,
+    //% jres=ExperimentalAddonItemIcon.rod32
+    Rod32 = 32,
     //% block="64px"
-    //% jres=ExperimentalAddonItemIcon.sword64
-    Sword64 = 64
+    //% jres=ExperimentalAddonItemIcon.rod64
+    Rod64 = 64
 }
 
 enum ExperimentalPagedItem1 {
-    //% block="01 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="01 エメラルド"
+    //% jres=ExperimentalAddonItemIcon.emeraldRod
     Item01 = 1,
-    //% block="02 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="02 サファイア"
+    //% jres=ExperimentalAddonItemIcon.sapphireRod
     Item02 = 2,
-    //% block="03 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="03 森"
+    //% jres=ExperimentalAddonItemIcon.forestRod
     Item03 = 3,
-    //% block="04 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="04 アメジスト"
+    //% jres=ExperimentalAddonItemIcon.amethystRod
     Item04 = 4,
     //% block="05 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% jres=ExperimentalAddonItemIcon.rubyRod
     Item05 = 5,
     //% block="06 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% jres=ExperimentalAddonItemIcon.amberRod
     Item06 = 6,
-    //% block="07 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="07 エメラルド"
+    //% jres=ExperimentalAddonItemIcon.emeraldRod
     Item07 = 7,
-    //% block="08 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="08 サファイア"
+    //% jres=ExperimentalAddonItemIcon.sapphireRod
     Item08 = 8,
-    //% block="09 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="09 森"
+    //% jres=ExperimentalAddonItemIcon.forestRod
     Item09 = 9,
-    //% block="10 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="10 アメジスト"
+    //% jres=ExperimentalAddonItemIcon.amethystRod
     Item10 = 10,
     //% block="11 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% jres=ExperimentalAddonItemIcon.rubyRod
     Item11 = 11,
     //% block="12 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% jres=ExperimentalAddonItemIcon.amberRod
     Item12 = 12
 }
 
 enum ExperimentalPagedItem2 {
-    //% block="13 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="13 エメラルド"
+    //% jres=ExperimentalAddonItemIcon.emeraldRod
     Item13 = 13,
-    //% block="14 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="14 サファイア"
+    //% jres=ExperimentalAddonItemIcon.sapphireRod
     Item14 = 14,
-    //% block="15 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="15 森"
+    //% jres=ExperimentalAddonItemIcon.forestRod
     Item15 = 15,
-    //% block="16 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="16 アメジスト"
+    //% jres=ExperimentalAddonItemIcon.amethystRod
     Item16 = 16,
     //% block="17 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% jres=ExperimentalAddonItemIcon.rubyRod
     Item17 = 17,
     //% block="18 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% jres=ExperimentalAddonItemIcon.amberRod
     Item18 = 18,
-    //% block="19 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="19 エメラルド"
+    //% jres=ExperimentalAddonItemIcon.emeraldRod
     Item19 = 19,
-    //% block="20 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="20 サファイア"
+    //% jres=ExperimentalAddonItemIcon.sapphireRod
     Item20 = 20,
-    //% block="21 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="21 森"
+    //% jres=ExperimentalAddonItemIcon.forestRod
     Item21 = 21,
-    //% block="22 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="22 アメジスト"
+    //% jres=ExperimentalAddonItemIcon.amethystRod
     Item22 = 22,
     //% block="23 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% jres=ExperimentalAddonItemIcon.rubyRod
     Item23 = 23,
     //% block="24 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% jres=ExperimentalAddonItemIcon.amberRod
     Item24 = 24
 }
 
 enum ExperimentalPagedItem3 {
-    //% block="25 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="25 エメラルド"
+    //% jres=ExperimentalAddonItemIcon.emeraldRod
     Item25 = 25,
-    //% block="26 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="26 サファイア"
+    //% jres=ExperimentalAddonItemIcon.sapphireRod
     Item26 = 26,
-    //% block="27 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="27 森"
+    //% jres=ExperimentalAddonItemIcon.forestRod
     Item27 = 27,
-    //% block="28 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="28 アメジスト"
+    //% jres=ExperimentalAddonItemIcon.amethystRod
     Item28 = 28,
     //% block="29 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% jres=ExperimentalAddonItemIcon.rubyRod
     Item29 = 29,
     //% block="30 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% jres=ExperimentalAddonItemIcon.amberRod
     Item30 = 30,
-    //% block="31 木の剣"
-    //% jres=ExperimentalAddonItemIcon.woodenSword
+    //% block="31 エメラルド"
+    //% jres=ExperimentalAddonItemIcon.emeraldRod
     Item31 = 31,
-    //% block="32 石の剣"
-    //% jres=ExperimentalAddonItemIcon.stoneSword
+    //% block="32 サファイア"
+    //% jres=ExperimentalAddonItemIcon.sapphireRod
     Item32 = 32,
-    //% block="33 鉄の剣"
-    //% jres=ExperimentalAddonItemIcon.ironSword
+    //% block="33 森"
+    //% jres=ExperimentalAddonItemIcon.forestRod
     Item33 = 33,
-    //% block="34 金の剣"
-    //% jres=ExperimentalAddonItemIcon.goldenSword
+    //% block="34 アメジスト"
+    //% jres=ExperimentalAddonItemIcon.amethystRod
     Item34 = 34,
     //% block="35 ダイヤ"
-    //% jres=ExperimentalAddonItemIcon.diamondSword
+    //% jres=ExperimentalAddonItemIcon.rubyRod
     Item35 = 35,
     //% block="36 ネザライト"
-    //% jres=ExperimentalAddonItemIcon.netheriteSword
+    //% jres=ExperimentalAddonItemIcon.amberRod
     Item36 = 36
 }
 type ExperimentalHandler = () => void;
@@ -386,10 +395,10 @@ namespace mceeExperimental {
     let lastColor = ExperimentalColor.Red;
     let lastMessage = "";
     let lastItem = Item.Apple;
-    let lastAddonItem = ExperimentalAddonItem.WoodenSword;
+    let lastAddonItem = ExperimentalAddonItem.EmeraldRod;
     let lastScrollItem = ExperimentalScrollItem.Item01;
     let lastPagedItem = 1;
-    let lastImageSizeIcon = ExperimentalImageSizeIcon.Sword32;
+    let lastImageSizeIcon = ExperimentalImageSizeIcon.Rod32;
 
     /**
      * 文字列候補をドロップダウンで選びます。
@@ -879,7 +888,7 @@ namespace mceeExperimental {
      */
     //% blockId=mcee_exp_pick_addon_item
     //% block="自作アイテム $item を選ぶ"
-    //% item.defl=ExperimentalAddonItem.WoodenSword
+    //% item.defl=ExperimentalAddonItem.EmeraldRod
     //% item.fieldEditor="imagedropdown"
     //% item.fieldOptions.columns=3
     //% weight=80 group="Minecraft"
@@ -893,17 +902,20 @@ namespace mceeExperimental {
      */
     //% blockId=mcee_exp_addon_item_id
     //% block="自作アイテム $item のID"
-    //% item.defl=ExperimentalAddonItem.WoodenSword
+    //% item.defl=ExperimentalAddonItem.EmeraldRod
     //% item.fieldEditor="imagedropdown"
     //% item.fieldOptions.columns=3
     //% weight=70 group="Minecraft"
     export function addonItemId(item: ExperimentalAddonItem): string {
-        if (item == ExperimentalAddonItem.StoneSword) return "mcee:stone_sword";
-        if (item == ExperimentalAddonItem.IronSword) return "mcee:iron_sword";
-        if (item == ExperimentalAddonItem.GoldenSword) return "mcee:golden_sword";
-        if (item == ExperimentalAddonItem.DiamondSword) return "mcee:diamond_sword";
-        if (item == ExperimentalAddonItem.NetheriteSword) return "mcee:netherite_sword";
-        return "mcee:wooden_sword";
+        if (item == ExperimentalAddonItem.SapphireRod) return "mcee:sapphire_rod";
+        if (item == ExperimentalAddonItem.ForestRod) return "mcee:forest_rod";
+        if (item == ExperimentalAddonItem.AmethystRod) return "mcee:amethyst_rod";
+        if (item == ExperimentalAddonItem.RubyRod) return "mcee:ruby_rod";
+        if (item == ExperimentalAddonItem.AmberRod) return "mcee:amber_rod";
+        if (item == ExperimentalAddonItem.EmeraldScepter) return "mcee:emerald_scepter";
+        if (item == ExperimentalAddonItem.SilverEmeraldRod) return "mcee:silver_emerald_rod";
+        if (item == ExperimentalAddonItem.SteelEmeraldRod) return "mcee:steel_emerald_rod";
+        return "mcee:emerald_rod";
     }
 
     /**
@@ -965,7 +977,7 @@ namespace mceeExperimental {
      */
     //% blockId=mcee_exp_compare_image_size
     //% block="画像サイズ比較 $icon を選ぶ"
-    //% icon.defl=ExperimentalImageSizeIcon.Sword32
+    //% icon.defl=ExperimentalImageSizeIcon.Rod32
     //% icon.fieldEditor="imagedropdown"
     //% icon.fieldOptions.columns=3
     //% icon.fieldOptions.width=280
