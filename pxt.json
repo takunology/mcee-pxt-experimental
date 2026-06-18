@@ -1,0 +1,24 @@
+{
+    "name": "mcee-pxt-experimental",
+    "version": "0.0.1",
+    "description": "Experimental custom blocks for Minecraft Education MakeCode.",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "preferredEditor": "tsprj",
+    "supportedTargets": [
+        "minecraft"
+    ],
+    "targetVersions": {
+        "targetId": "minecraft"
+    }
+}
